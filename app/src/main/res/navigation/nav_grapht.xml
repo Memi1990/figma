@@ -9,7 +9,11 @@
         android:id="@+id/initFragment"
         android:name="com.example.figma.InitFragment"
         android:label="fragment_init"
-        tools:layout="@layout/fragment_init" />
+        tools:layout="@layout/fragment_init" >
+        <action
+            android:id="@+id/action_initFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.figma.WelcomeFragment"
